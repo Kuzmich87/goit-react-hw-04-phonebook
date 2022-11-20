@@ -11,7 +11,7 @@ const LS_KEY = 'contacts';
 
 function App() {
   const [contacts, setContacts] = useState(() => {
-    return JSON.parse(window.localStorage.getItem('contacts')) ?? [];
+    return JSON.parse(window.localStorage.getItem(LS_KEY)) ?? [];
   });
   const [filter, setFilter] = useState('');
 
